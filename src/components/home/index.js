@@ -11,12 +11,10 @@ class Home extends Component{
     render(){
         return(
             <div className="home">
-                <Header/>
                 <div className="main">
                     <Happen/>
                     <Notify/>
                 </div>
-                <Footer/>
             </div>
         )
 
