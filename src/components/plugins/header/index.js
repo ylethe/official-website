@@ -2,6 +2,7 @@
  * Created by grace on 17-4-22.
  */
 import React,{Component} from 'react';
+import {Link} from 'react-router';
 import Logo from '../../../images/logo.png';
 import CarouselFigure from '../../plugins/carouselFigure';
 import './index.css';
@@ -13,10 +14,10 @@ class Header extends Component{
                 <div className="nav">
                     <div className="content">
                         <ul>
-                            <li>服务门户</li>
-                            <li>电子邮件</li>
-                            <li>东北大学</li>
-                            <li>旧版浏览</li>
+                            <li><Link to="/home">服务门户</Link></li>
+                            <li><Link to="/home">电子邮件</Link></li>
+                            <li><Link to="/home">东北大学</Link></li>
+                            <li><Link to="/home">旧版浏览</Link></li>
                         </ul>
                         <input type="text"/>
                     </div>

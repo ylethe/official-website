@@ -22,11 +22,14 @@
     float: left;
     width: 150px;
     text-align: center;
-    color: #ffffff;
-    font-size: 14px;
     border-left: 1px solid rgba(0, 0, 0, 0.51);
     cursor: pointer;
     transition: all 0.5s;
+}
+.nav .content ul li a{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
 }
 .nav .content ul li:last-of-type{
     border-right:1px solid rgba(0, 0, 0, 0.51);

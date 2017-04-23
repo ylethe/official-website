@@ -3,6 +3,7 @@
  */
 import React,{Component} from 'react';
 import './index.css';
+import {Link} from 'react-router';
 import Happen1 from '../../../images/happen1.jpg';
 import Happen2 from '../../../images/happen2.jpg';
 import Happen3 from '../../../images/happen2.jpg';
@@ -34,7 +35,7 @@ class Happen extends Component{
                         </div>
                     )
                 })}
-                <button className="btn">了解更多</button>
+                <Link to="/list"><button className="btn">更多</button></Link>
             </div>
         )
     }
