@@ -1,5 +1,61 @@
 .happen{
-    float: left;
     width: 800px;
-    min-height:200px;
+    min-height:420px;
+    margin-top: 100px;
+}
+.happen .title{
+    font-size: 20px;
+    height:50px;
+    line-height: 50px;
+    word-spacing: 1px;
+}
+.happen .card{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 399px;
+    height:400px;
+    float: left;
+    border-top:1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+.happen .card:nth-of-type(2n+1){
+    border-right: none;
+}
+.happen .card img{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    width: 100%;
+    height:200px;
+}
+.happen .card p{
+    margin-top: 20px;
+}
+.happen .card button{
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 20px;
+    width: 100px;
+    height:30px;
+    line-height: 30px;
+    background: #871e23;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.happen .btn{
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 5px;
+    width: 100%;
+    height:50px;
+    border-radius: 5px;
+    background: #cccccc;
+    border: none;
+    outline: none;
+    letter-spacing: 20px;
+}
+.happen .btn:hover{
+    text-decoration: underline;
 }

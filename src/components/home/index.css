@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.home .main{
+    position: relative;
+    width: 1200px;
+    min-height: 400px;
+    margin: 0 auto;
+}

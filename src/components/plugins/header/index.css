@@ -26,6 +26,7 @@
     font-size: 14px;
     border-left: 1px solid rgba(0, 0, 0, 0.51);
     cursor: pointer;
+    transition: all 0.5s;
 }
 .nav .content ul li:last-of-type{
     border-right:1px solid rgba(0, 0, 0, 0.51);
@@ -76,4 +77,8 @@
     list-style: none;
     color: #ffffff;
     cursor: pointer;
+    transition: all 0.5s;
+}
+.top .content .list ul li:hover{
+    color: #171717;
 }

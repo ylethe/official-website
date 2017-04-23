@@ -3,10 +3,10 @@
  */
 import React,{Component} from 'react';
 import './index.css';
-import Happen1 from '../../images/happen1.jpg';
-import Happen2 from '../../images/happen2.jpg';
-import Happen3 from '../../images/happen2.jpg';
-import Happen4 from '../../images/happen4.jpg';
+import Happen1 from '../../../images/happen1.jpg';
+import Happen2 from '../../../images/happen2.jpg';
+import Happen3 from '../../../images/happen2.jpg';
+import Happen4 from '../../../images/happen4.jpg';
 
 
 class Happen extends Component{
@@ -27,13 +27,14 @@ class Happen extends Component{
                 <div className="title">学校新闻</div>
                 {this.state.happens.map((happen,index)=>{
                     return(
-                        <div className="card">
+                        <div className="card" key={index}>
                             <img src={happen.pic}/>
                             <p>{happen.describe}</p>
-                            <button>更多 ></button>
+                            <button>详 情  ></button>
                         </div>
                     )
                 })}
+                <button className="btn">了解更多</button>
             </div>
         )
     }
