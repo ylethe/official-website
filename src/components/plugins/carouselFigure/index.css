@@ -6,31 +6,32 @@
     clear: both;
     overflow: hidden;
 }
-.main-content{
+.carouse-figure .main-content{
     width:1200px;
     height:400px;
 }
-.slider{
+.carouse-figure .slider{
     width: 800px;
     height:400px;
     line-height: 400px;
     float: left;
     overflow: hidden;
 }
-.images{
+.carouse-figure .images{
     position: absolute;
-    z-index: -1;
     width:5600px;
     height: 400px;
     overflow: hidden;
     left: 0;
 }
-img{
+.carouse-figure img{
     width:800px;
     height: 400px;
     float: left;
 }
-.describe{
+.carouse-figure .describe{
+    position: relative;
+    z-index:555;
     width: 400px;
     height: 400px;
     line-height:55px;
@@ -44,7 +45,7 @@ img{
     width: 1200px;
     height: 50px;
     position: absolute;
-    z-index: 2;
+    z-index: 999;
     bottom: 0px;
     left: 0;
 }
