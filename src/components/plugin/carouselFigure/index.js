@@ -15,6 +15,7 @@ class CarouselFigure extends Component{
         this.state = {
             describe:"Northeastern University in Qinhuangdao"
         };
+
     }
     componentDidMount(){
         let mySwiper = new Swiper('.slider', {
@@ -26,6 +27,34 @@ class CarouselFigure extends Component{
             grabCursor: true,
             mousewheelControl: true,
             lazyLoading: true,
+            onSlideChangeStart: (swiper)=>{
+                //alert(swiper.activeIndex);
+                if(swiper.activeIndex == 1){
+                    console.log(1);
+                    this.setState({describe: "Northeastern University in Qinhuangdao"});
+                }
+                if(swiper.activeIndex == 2){
+                    console.log(2);
+                    this.setState({describe: "第二张图"});
+                }
+                if(swiper.activeIndex == 3){
+                    console.log(3);
+                    this.setState({describe: "第三张图"});
+                }
+                if(swiper.activeIndex == 4){
+                    console.log(4);
+                    this.setState({describe: "第四张图"});
+                }
+                if(swiper.activeIndex == 5){
+                    console.log(5);
+                    this.setState({describe: "第五张图"});
+                }
+            },
+            onSlideChangeEnd: (swiper)=>{
+                if(swiper.activeIndex == 5){
+                   setTimeout(()=>{this.setState({describe: "Northeastern University in Qinhuangdao"});},1500);
+                }
+            }
         });
     }
     render(){
