@@ -30,18 +30,22 @@
     float: left;
 }
 .carouse-figure .describe{
+    color: #ffffff;
     position: relative;
     z-index: 100;
     width: 400px;
     height: 400px;
     line-height:55px;
     float: left;
-    background: #bb0802;
+    background:#a02228;
     text-align: center;
     font-size: 40px;
     white-space:normal;
     display:table-cell;
     vertical-align:middle;
+}
+.carouse-figure .describe p{
+    margin-top: 100px;
 }
 .carouse-figure .bottom-content{
     width: 1200px;
