@@ -36,6 +36,7 @@
     opacity: 1;
 }
 .happen .card p{
+    line-height: 30px;
     margin-top: 20px;
 }
 .happen .card button{
